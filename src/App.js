@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './css/estilos.css'
 
-function App() {
+
+const App = () => {
+
+    const saludo = "React - INTECAP"
+    const nombre ="Yoni Edilzar Escobar Bautista"
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+        <h1 className='titulo'>{saludo}</h1>
+        <p className='titulo'>{nombre}</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et repellendus eius ullam dolorum quas laborum esse repudiandae voluptas accusamus, tempora veritatis suscipit. Modi, nisi cupiditate mollitia quaerat qui officia.</p>
+    </>
+
+  )
 }
 
-export default App;
+export default App
