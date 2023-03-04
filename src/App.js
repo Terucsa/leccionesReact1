@@ -1,6 +1,8 @@
 import React from 'react'
 import './css/estilos.css'
 import Usuarios from './components/Usuarios'
+import Footer from './components/Footer'
+import Boton from './components/Boton'
 
 const App = () => {
 
@@ -9,8 +11,16 @@ const App = () => {
   return (
     <>
       {sesion? 
-        <Usuarios /> :
-        <h1 className='titulo'>Debes Iniciar Sesión</h1>}
+        <>
+          <Usuarios />
+          <Footer />
+        </>:
+        <>
+          <h1 className='titulo' style={{color:"red"}}>Debes Iniciar Sesión</h1>
+            <Boton/>
+            <Footer />
+          </>
+      }
     
     </>
   )
