@@ -1,21 +1,18 @@
 import React from 'react'
 import './css/estilos.css'
-
+import Usuarios from './components/Usuarios'
 
 const App = () => {
 
-    const saludo = "React - INTECAP"
-    const nombre ="Yoni Edilzar Escobar Bautista"
-
+  const sesion = false;
 
   return (
     <>
-        <h1 className='titulo'>{saludo}</h1>
-        <p className='titulo'>{nombre}</p>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et repellendus eius ullam dolorum quas laborum esse repudiandae voluptas accusamus, tempora veritatis suscipit. Modi, nisi cupiditate mollitia quaerat qui officia.</p>
+      {sesion? 
+        <Usuarios /> :
+        <h1 className='titulo'>Debes Iniciar Sesión</h1>}
+    
     </>
-
   )
 }
 
